@@ -175,24 +175,10 @@ function UploadPage() {
 
   return (
     <div>
-      <h2>Upload Invoice</h2>
       <Layout className="min-h-screen">
         <Layout>
-          <Content className="p-6">
+          <Content className="p-0">
             <div className="bg-white rounded-lg min-h-[calc(100vh-120px)]">
-              <div className="border-b">
-                <Tabs
-                  activeKey={selectedTab}
-                  onChange={setSelectedTab}
-                  items={[
-                    { key: "edit", label: "Edit" },
-                    { key: "email", label: "Email view" },
-                    { key: "payor", label: "Payor view" },
-                    { key: "pdf", label: "PDF view" },
-                  ]}
-                />
-              </div>
-
               <div className="grid h-full">
                 <div className="border-r">
                   <div className="p-4 border-b">
